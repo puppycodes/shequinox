@@ -1,0 +1,125 @@
+.vimeo-wrapper {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   z-index: -1;
+   pointer-events: none;
+   overflow: hidden;
+}
+.vimeo-wrapper iframe {
+   width: 100vw;
+   height: 56.25vw; /* Given a 16:9 aspect ratio, 9/16*100 = 56.25 */
+   min-height: 100vh;
+   min-width: 177.77vh; /* Given a 16:9 aspect ratio, 16/9*100 = 177.77 */
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
+
+/* vars */
+/* fancyfancy */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+  text-transform: uppercase;
+  letter-spacing: 1em;
+  font: 43px "Playfair Display", Georgia, serif;
+  color: #666;
+  height: 100vh;
+}
+
+/* the animation */
+@keyframes appear {
+  0% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  100% {
+    opacity: 0.25;
+  }
+}
+/* the loop */
+.blurrr-0 {
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.0625);
+  color: #d0d0d0;
+  transition: all 0.01s ease-out;
+  animation: appear 9s infinite;
+}
+
+.blurrr-1 {
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.125);
+  color: #c4c4c4;
+  transition: all 0.02s ease-out;
+  animation: appear 10s infinite;
+}
+
+.blurrr-2 {
+  text-shadow: 0 0 9px rgba(0, 0, 0, 0.1875);
+  color: #b7b7b7;
+  transition: all 0.03s ease-out;
+  animation: appear 11s infinite;
+}
+
+.blurrr-3 {
+  text-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+  color: #aaaaaa;
+  transition: all 0.04s ease-out;
+  animation: appear 12s infinite;
+}
+
+.blurrr-4 {
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.3125);
+  color: #9d9d9d;
+  transition: all 0.05s ease-out;
+  animation: appear 13s infinite;
+}
+
+.blurrr-5 {
+  text-shadow: 0 0 18px rgba(0, 0, 0, 0.375);
+  color: #919191;
+  transition: all 0.06s ease-out;
+  animation: appear 14s infinite;
+}
+
+.blurrr-6 {
+  text-shadow: 0 0 21px rgba(0, 0, 0, 0.4375);
+  color: #848484;
+  transition: all 0.07s ease-out;
+  animation: appear 15s infinite;
+}
+
+.blurrr-7 {
+  text-shadow: 0 0 24px rgba(0, 0, 0, 0.5);
+  color: #777777;
+  transition: all 0.08s ease-out;
+  animation: appear 16s infinite;
+}
+
+.blurrr-8 {
+  text-shadow: 0 0 27px rgba(0, 0, 0, 0.5625);
+  color: #6a6a6a;
+  transition: all 0.09s ease-out;
+  animation: appear 17s infinite;
+}
+
+.blurrr-9 {
+  text-shadow: 0 0 30px rgba(0, 0, 0, 0.625);
+  color: #5e5e5e;
+  transition: all 0.1s ease-out;
+  animation: appear 18s infinite;
+}
+
+.blurrr-10 {
+  text-shadow: 0 0 33px rgba(0, 0, 0, 0.6875);
+  color: #515151;
+  transition: all 0.11s ease-out;
+  animation: appear 19s infinite;
+}
